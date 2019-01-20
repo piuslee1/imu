@@ -17,9 +17,9 @@ def main():
     args = parser.parse_args()
 
     if (args.reset):
-        max_val_x = 0
-        max_val_y = 0
-        max_val_z = 0
+        max_val_x = -9999
+        max_val_y = -9999
+        max_val_z = -9999
 
         min_val_x = sys.float_info.max
         min_val_y = sys.float_info.max
