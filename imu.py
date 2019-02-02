@@ -5,10 +5,13 @@ import pyquaternion as pyq
 import sys
 import os
 import argparse
+import time
 
-port = '/dev/cu.usbmodem14101'
+# port = '/dev/cu.usbmodem14101'
+port = '/dev/serial/by-id/usb-SparkFun_SFE_9DOF-D21-if00'
 file_name = os.path.abspath('mag.config')
 s = serial.Serial(port,115200)
+time.sleep(0.1)
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 def main():
