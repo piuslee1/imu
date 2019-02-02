@@ -62,15 +62,16 @@ def main():
                 y = float(rec[1])
                 z = float(rec[2])
 
-                #Maximum values so far
-                max_val_x = max(max_val_x, x)
-                max_val_y = max(max_val_y, y)
-                max_val_z = max(max_val_z, z)
+                if (args.reset):
+                    #Maximum values so far
+                    max_val_x = max(max_val_x, x)
+                    max_val_y = max(max_val_y, y)
+                    max_val_z = max(max_val_z, z)
 
-                #Minimum values so far
-                min_val_x = min(min_val_x, x)
-                min_val_y = min(min_val_y, y)
-                min_val_z = min(min_val_z, z)
+                    #Minimum values so far
+                    min_val_x = min(min_val_x, x)
+                    min_val_y = min(min_val_y, y)
+                    min_val_z = min(min_val_z, z)
 
                 if (max_val_x == min_val_x or
                     max_val_y == min_val_y or
