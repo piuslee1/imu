@@ -1,7 +1,6 @@
 import serial
 import re
 import redis
-import pyquaternion as pyq
 import sys
 import os
 import argparse
@@ -43,15 +42,17 @@ def main():
 
     try:
         while True:
+            collected = [False, False, False]
             line = str(s.readline())
             rec = None
             name = None
 
             if ("Accel" in line):
-                rec = re.findall("-?\d+\.\d+", line)
-                name = 'acceleration'
+                rec_a = re.findall("-?\d+\.\d+", line)
+                collected[0] = True
 
             if ("Mag" in line):
+                collected[1] = True
                 rec = re.findall("-?\d+\.\d+", line)
 
                 #Incoming values
@@ -103,16 +104,21 @@ def main():
                 corrected_y *= scale_y
                 corrected_z *= scale_z
 
-                rec = [str(corrected_x),str(corrected_y),str(corrected_z)]
-                name = 'orientation'
+                rec_m = [str(corrected_x),str(corrected_y),str(corrected_z)]
 
             if ("Gyro" in line):
-                rec = re.findall("-?\d+\.\d+", line)
-                name = 'rot_v'
+                rec_g = re.findall("-?\d+\.\d+", line)
+                collected[2] = True
 
-            if (rec is not None):
-                pub = rec[0] + ' ' + rec[1] + ' ' + rec[2]
-                r.set(name, pub)
+            if (False not in collected):
+                all_data = [rec_g, rec_a, rec_m]
+                for arr in all_data:
+                    for val in arr:
+                        ret += val
+                        ret += ' '
+                r.set('imu', ret[:len(ret)])
+                collected = [False] * 3
+                
     except KeyboardInterrupt:
         if (args.reset):
             file = open(file_name, 'w')
