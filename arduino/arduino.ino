@@ -86,12 +86,12 @@ void printIMUData(void)
   // Use the calcAccel, calcGyro, and calcMag functions to
   // convert the raw sensor readings (signed 16-bit values)
   // to their respective units.
-  float accelX = imu.calcAccel(imu.ax) - 0.01;
-  float accelY = imu.calcAccel(imu.ay) - 0.015;
-  float accelZ = imu.calcAccel(imu.az) + 0.05;
-  float gyroX = imu.calcGyro(imu.gx) - 0.09;
-  float gyroY = imu.calcGyro(imu.gy) + 0.67;
-  float gyroZ = imu.calcGyro(imu.gz) - 0.40;
+  float accelX = imu.calcAccel(imu.ax);
+  float accelY = imu.calcAccel(imu.ay);
+  float accelZ = imu.calcAccel(imu.az);
+  float gyroX = imu.calcGyro(imu.gx);
+  float gyroY = imu.calcGyro(imu.gy);
+  float gyroZ = imu.calcGyro(imu.gz);
   float magX = imu.calcMag(imu.mx);
   float magY = imu.calcMag(imu.my);
   float magZ = imu.calcMag(imu.mz);
