@@ -5,6 +5,15 @@ import sys
 import os
 import argparse
 
+CALIBRATION_A_X = -0.01
+CALIBRATION_A_Y = -0.015
+CALIBRATION_A_Z = 0.05
+CALIBRATION_G_X = -0.09
+CALIBRATION_G_Y = 0.67
+CALIBRATION_G_Z = -0.40
+
+
+
 port = '/dev/cu.usbmodem14101'
 file_name = os.path.abspath('mag.config')
 s = serial.Serial(port,115200)
@@ -14,6 +23,9 @@ def main():
     parser = argparse.ArgumentParser(description='IMU driver')
     parser.add_argument('--reset', help='Reset stored values.', action='store_true')
     args = parser.parse_args()
+
+    calibration_a = [CALIBRATION_A_X, CALIBRATION_A_Y, CALIBRATION_A_Z]
+    calibration_g = [CALIBRATION_G_X, CALIBRATION_G_Y, CALIBRATION_G_Z]
 
     if (args.reset):
         max_val_x = -9999
@@ -48,7 +60,10 @@ def main():
             name = None
 
             if ("Accel" in line):
-                rec_a = re.findall("-?\d+\.\d+", line)
+                input_val = re.findall("-?\d+\.\d+", line)
+                rec_a = []
+                for a,b in zip(input_val, calibration_a):
+                    rec_a.append(float(a) + float(b))
                 collected[0] = True
 
             if ("Mag" in line):
@@ -107,7 +122,10 @@ def main():
                 rec_m = [str(corrected_x),str(corrected_y),str(corrected_z)]
 
             if ("Gyro" in line):
-                rec_g = re.findall("-?\d+\.\d+", line)
+                input_val = re.findall("-?\d+\.\d+", line)
+                rec_g = []
+                for a,b in zip(input_val, calibration_a):
+                    rec_g.append(float(a) + float(b))
                 collected[2] = True
 
             if (False not in collected):
