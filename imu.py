@@ -4,6 +4,8 @@ import redis
 import sys
 import os
 import argparse
+import pynmea2
+import numpy as np
 
 CALIBRATION_A_X = -0.01
 CALIBRATION_A_Y = -0.015
