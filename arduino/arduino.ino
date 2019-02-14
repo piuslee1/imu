@@ -13,13 +13,24 @@ Supported Platforms:
 - ATSAMD21 (Arduino Zero, SparkFun SAMD21 Breakouts)
 *************************************************************/
 #include <SparkFunMPU9250-DMP.h>
+#include <stdio.h>
 #define SerialPort SerialUSB
+#define vals_len 9
+#define indiv_val_len 7
+
 MPU9250_DMP imu;
+float vals[vals_len];
+char buffer[vals_len*indiv_val_len];
+char * val_formats[] = {
+  "%1.4f,", "%1.4f,", "%1.4f,", 
+  "%1.4f,", "%1.4f,", "%1.4f,", 
+  "%4.1f,", "%4.1f,", "%4.1f,"
+};
 
 void setup() 
 {
   SerialPort.begin(115200);
-  Serial1.begin(9600);
+  Serial1.begin(115200);
   if (imu.begin() != INV_SUCCESS)
   {
     while (1)
@@ -48,14 +59,14 @@ void setup()
   // of the accelerometer and gyroscope.
   // Can be any of the following: 188, 98, 42, 20, 10, 5
   // (values are in Hz).
-  imu.setLPF(5); // Set LPF corner frequency to 5Hz
+  imu.setLPF(188); // Set LPF corner frequency to 5Hz
   // The sample rate of the accel/gyro can be set using
   // setSampleRate. Acceptable values range from 4Hz to 1kHz
-  imu.setSampleRate(10); // Set sample rate to 10Hz
+  imu.setSampleRate(1000); // Set sample rate to 10Hz
   // Likewise, the compass (magnetometer) sample rate can be
   // set using the setCompassSampleRate() function.
   // This value can range between: 1-100Hz
-  imu.setCompassSampleRate(10); // Set mag rate to 10Hz
+  imu.setCompassSampleRate(100); // Set mag rate to 10Hz
 }
 void loop() 
 {
@@ -74,9 +85,9 @@ void loop()
     imu.update(UPDATE_ACCEL | UPDATE_GYRO | UPDATE_COMPASS);
     printIMUData();
   }
-  if (Serial1.available()) {
-    SerialPort.println(Serial1.readStringUntil('\n'));
-  }
+  /*if (Serial1.available()) {*/
+    /*SerialPort.println(Serial1.readStringUntil('\n'));*/
+  /*}*/
 }
 void printIMUData(void)
 {  
@@ -86,22 +97,29 @@ void printIMUData(void)
   // Use the calcAccel, calcGyro, and calcMag functions to
   // convert the raw sensor readings (signed 16-bit values)
   // to their respective units.
-  float accelX = imu.calcAccel(imu.ax) - 0.01;
-  float accelY = imu.calcAccel(imu.ay) - 0.015;
-  float accelZ = imu.calcAccel(imu.az) + 0.05;
-  float gyroX = imu.calcGyro(imu.gx) - 0.09;
-  float gyroY = imu.calcGyro(imu.gy) + 0.67;
-  float gyroZ = imu.calcGyro(imu.gz) - 0.40;
-  float magX = imu.calcMag(imu.mx);
-  float magY = imu.calcMag(imu.my);
-  float magZ = imu.calcMag(imu.mz);
+  vals[0] = imu.calcAccel(imu.ax);
+  vals[1] = imu.calcAccel(imu.ay);
+  vals[2] = imu.calcAccel(imu.az);
+  vals[3] = imu.calcGyro(imu.gx);
+  vals[4] = imu.calcGyro(imu.gy);
+  vals[5] = imu.calcGyro(imu.gz);
+  vals[6] = imu.calcMag(imu.mx);
+  vals[7] = imu.calcMag(imu.my);
+  vals[8] = imu.calcMag(imu.mz);
+  int start = 0;
+  for (int i=0; i<vals_len; i++) {
+    // 2+4 digits + period and comma
+    start += sprintf(&buffer[start], val_formats[i], vals[i]);
+  }
+  /*buffer[(vals_len-1)*indiv_val_len+1] = 0;*/
+  SerialPort.println(buffer);
   
-  SerialPort.println("Accel: " + String(accelX) + ", " +
-              String(accelY) + ", " + String(accelZ) + " g");
-  SerialPort.println("Gyro: " + String(gyroX) + ", " +
-              String(gyroY) + ", " + String(gyroZ) + " dps");
-  SerialPort.println("Mag: " + String(magX) + ", " +
-              String(magY) + ", " + String(magZ) + " uT");
-  SerialPort.println("Time: " + String(imu.time) + " ms");
-  SerialPort.println();
+  /*SerialPort.println("Accel: " + String(accelX) + ", " +*/
+              /*String(accelY) + ", " + String(accelZ) + " g");*/
+  /*SerialPort.println("Gyro: " + String(gyroX) + ", " +*/
+              /*String(gyroY) + ", " + String(gyroZ) + " dps");*/
+  /*SerialPort.println("Mag: " + String(magX) + ", " +*/
+              /*String(magY) + ", " + String(magZ) + " uT");*/
+  /*SerialPort.println("Time: " + String(imu.time) + " ms");*/
+  /*SerialPort.println();*/
 }
