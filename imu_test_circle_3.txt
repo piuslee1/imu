@@ -1,0 +1,500 @@
+15:15:10.369 -> Accel:-286.94, -85.89, 1349.81 mg
+15:15:10.369 -> Gyro:1.68, 1.53, -2.75 deg/s
+15:15:10.369 -> Mag:-516,-185,800 mG
+15:15:10.369 -> Software quaternions (ENU):
+15:15:10.369 -> q0 = 0.15 qx = -0.10 qy = -0.02 qz = 0.98
+15:15:10.369 -> Hardware quaternions (NED):
+15:15:10.369 -> Q0 = 0.15 Qx = 0.04 Qy = 0.98 Qz = 0.15
+15:15:10.369 -> Software yaw, pitch, roll: 175.62, 11.42, -3.86
+15:15:10.369 -> Hardware Yaw, Pitch, Roll: 174.76, -15.90, 7.51
+15:15:10.369 -> BMP280:
+15:15:10.369 -> Altimeter temperature = 27.27 C
+15:15:10.369 -> Altimeter temperature = 81.09 F
+15:15:10.369 -> Altimeter pressure = 1006.64 mbar
+15:15:10.369 -> Altitude = 180.93 feet
+15:15:10.369 ->  
+15:15:10.369 -> Send '1' to store Warm Start configuration
+15:15:10.369 -> Send '2' to store Accel Cal
+15:15:10.369 -> 50.2,175.62,11.42,-3.86,174.76,-15.90,7.51
+15:15:10.867 -> Accel:-278.16, -90.77, 1339.56 mg
+15:15:10.867 -> Gyro:-0.92, -1.68, -2.45 deg/s
+15:15:10.867 -> Mag:-521,-188,792 mG
+15:15:10.867 -> Software quaternions (ENU):
+15:15:10.867 -> q0 = 0.17 qx = -0.10 qy = -0.02 qz = 0.98
+15:15:10.867 -> Hardware quaternions (NED):
+15:15:10.867 -> Q0 = 0.14 Qx = 0.04 Qy = 0.97 Qz = 0.17
+15:15:10.867 -> Software yaw, pitch, roll: 174.28, 11.48, -4.05
+15:15:10.867 -> Hardware Yaw, Pitch, Roll: 173.35, -15.52, 7.19
+15:15:10.867 -> BMP280:
+15:15:10.867 -> Altimeter temperature = 27.29 C
+15:15:10.867 -> Altimeter temperature = 81.12 F
+15:15:10.867 -> Altimeter pressure = 1006.64 mbar
+15:15:10.867 -> Altitude = 180.93 feet
+15:15:10.867 ->  
+15:15:10.867 -> Send '1' to store Warm Start configuration
+15:15:10.867 -> Send '2' to store Accel Cal
+15:15:10.867 -> 50.7,174.28,11.48,-4.05,173.35,-15.52,7.19
+15:15:11.366 -> Accel:-272.79, -98.09, 1350.78 mg
+15:15:11.366 -> Gyro:2.91, -0.15, 0.00 deg/s
+15:15:11.366 -> Mag:-520,-196,800 mG
+15:15:11.366 -> Software quaternions (ENU):
+15:15:11.366 -> q0 = 0.17 qx = -0.11 qy = -0.02 qz = 0.98
+15:15:11.366 -> Hardware quaternions (NED):
+15:15:11.366 -> Q0 = 0.14 Qx = 0.03 Qy = 0.97 Qz = 0.17
+15:15:11.366 -> Software yaw, pitch, roll: 173.61, 11.52, -4.26
+15:15:11.366 -> Hardware Yaw, Pitch, Roll: 172.88, -14.87, 6.67
+15:15:11.366 -> BMP280:
+15:15:11.366 -> Altimeter temperature = 27.30 C
+15:15:11.366 -> Altimeter temperature = 81.14 F
+15:15:11.366 -> Altimeter pressure = 1006.65 mbar
+15:15:11.366 -> Altitude = 180.65 feet
+15:15:11.366 ->  
+15:15:11.366 -> Send '1' to store Warm Start configuration
+15:15:11.366 -> Send '2' to store Accel Cal
+15:15:11.366 -> 51.2,173.61,11.52,-4.26,172.88,-14.87,6.67
+15:15:11.863 -> Accel:-278.65, -73.69, 1340.05 mg
+15:15:11.863 -> Gyro:1.68, 1.07, 3.37 deg/s
+15:15:11.863 -> Mag:-518,-186,792 mG
+15:15:11.863 -> Software quaternions (ENU):
+15:15:11.863 -> q0 = 0.18 qx = -0.11 qy = -0.01 qz = 0.98
+15:15:11.863 -> Hardware quaternions (NED):
+15:15:11.863 -> Q0 = 0.13 Qx = 0.04 Qy = 0.97 Qz = 0.18
+15:15:11.863 -> Software yaw, pitch, roll: 172.64, 11.71, -3.30
+15:15:11.863 -> Hardware Yaw, Pitch, Roll: 172.18, -13.98, 7.62
+15:15:11.863 -> BMP280:
+15:15:11.863 -> Altimeter temperature = 27.32 C
+15:15:11.863 -> Altimeter temperature = 81.18 F
+15:15:11.863 -> Altimeter pressure = 1006.62 mbar
+15:15:11.863 -> Altitude = 181.47 feet
+15:15:11.863 ->  
+15:15:11.863 -> Send '1' to store Warm Start configuration
+15:15:11.863 -> Send '2' to store Accel Cal
+15:15:11.897 -> 51.7,172.64,11.71,-3.30,172.18,-13.98,7.62
+15:15:12.362 -> Accel:-262.54, -61.49, 1337.61 mg
+15:15:12.362 -> Gyro:-0.46, -3.98, 2.30 deg/s
+15:15:12.362 -> Mag:-520,-181,810 mG
+15:15:12.362 -> Software quaternions (ENU):
+15:15:12.362 -> q0 = 0.17 qx = -0.10 qy = -0.01 qz = 0.98
+15:15:12.362 -> Hardware quaternions (NED):
+15:15:12.362 -> Q0 = 0.13 Qx = 0.04 Qy = 0.98 Qz = 0.17
+15:15:12.362 -> Software yaw, pitch, roll: 173.28, 11.55, -2.88
+15:15:12.362 -> Hardware Yaw, Pitch, Roll: 172.80, -13.95, 7.62
+15:15:12.362 -> BMP280:
+15:15:12.362 -> Altimeter temperature = 27.33 C
+15:15:12.362 -> Altimeter temperature = 81.19 F
+15:15:12.362 -> Altimeter pressure = 1006.64 mbar
+15:15:12.362 -> Altitude = 180.93 feet
+15:15:12.362 ->  
+15:15:12.362 -> Send '1' to store Warm Start configuration
+15:15:12.362 -> Send '2' to store Accel Cal
+15:15:12.395 -> 52.2,173.28,11.55,-2.88,172.80,-13.95,7.62
+15:15:12.892 -> Accel:-296.22, -68.32, 1344.44 mg
+15:15:12.892 -> Gyro:-1.68, -9.94, 2.91 deg/s
+15:15:12.892 -> Mag:-520,-183,798 mG
+15:15:12.892 -> Software quaternions (ENU):
+15:15:12.892 -> q0 = 0.18 qx = -0.10 qy = -0.01 qz = 0.98
+15:15:12.892 -> Hardware quaternions (NED):
+15:15:12.892 -> Q0 = 0.13 Qx = 0.04 Qy = 0.98 Qz = 0.18
+15:15:12.892 -> Software yaw, pitch, roll: 172.73, 11.38, -3.02
+15:15:12.892 -> Hardware Yaw, Pitch, Roll: 172.17, -13.32, 7.06
+15:15:12.892 -> BMP280:
+15:15:12.892 -> Altimeter temperature = 27.34 C
+15:15:12.892 -> Altimeter temperature = 81.21 F
+15:15:12.892 -> Altimeter pressure = 1006.62 mbar
+15:15:12.892 -> Altitude = 181.47 feet
+15:15:12.892 ->  
+15:15:12.892 -> Send '1' to store Warm Start configuration
+15:15:12.892 -> Send '2' to store Accel Cal
+15:15:12.892 -> 52.7,172.73,11.38,-3.02,172.17,-13.32,7.06
+15:15:13.390 -> Accel:-256.69, -61.49, 1342.49 mg
+15:15:13.390 -> Gyro:1.38, 0.31, 6.27 deg/s
+15:15:13.390 -> Mag:-524,-178,792 mG
+15:15:13.390 -> Software quaternions (ENU):
+15:15:13.390 -> q0 = 0.16 qx = -0.10 qy = -0.01 qz = 0.98
+15:15:13.390 -> Hardware quaternions (NED):
+15:15:13.390 -> Q0 = 0.13 Qx = 0.03 Qy = 0.98 Qz = 0.16
+15:15:13.390 -> Software yaw, pitch, roll: 175.29, 10.57, -3.06
+15:15:13.390 -> Hardware Yaw, Pitch, Roll: 174.98, -13.70, 6.18
+15:15:13.390 -> BMP280:
+15:15:13.390 -> Altimeter temperature = 27.35 C
+15:15:13.390 -> Altimeter temperature = 81.23 F
+15:15:13.390 -> Altimeter pressure = 1006.62 mbar
+15:15:13.390 -> Altitude = 181.47 feet
+15:15:13.390 ->  
+15:15:13.390 -> Send '1' to store Warm Start configuration
+15:15:13.390 -> Send '2' to store Accel Cal
+15:15:13.390 -> 53.2,175.29,10.57,-3.06,174.98,-13.70,6.18
+15:15:13.889 -> Accel:-254.74, -48.31, 1359.08 mg
+15:15:13.889 -> Gyro:-1.07, -2.75, 7.04 deg/s
+15:15:13.889 -> Mag:-529,-178,798 mG
+15:15:13.889 -> Software quaternions (ENU):
+15:15:13.889 -> q0 = 0.15 qx = -0.09 qy = -0.01 qz = 0.98
+15:15:13.889 -> Hardware quaternions (NED):
+15:15:13.889 -> Q0 = 0.12 Qx = 0.04 Qy = 0.98 Qz = 0.15
+15:15:13.889 -> Software yaw, pitch, roll: 176.29, 10.44, -2.61
+15:15:13.889 -> Hardware Yaw, Pitch, Roll: 176.05, -13.09, 6.21
+15:15:13.889 -> BMP280:
+15:15:13.889 -> Altimeter temperature = 27.36 C
+15:15:13.889 -> Altimeter temperature = 81.25 F
+15:15:13.889 -> Altimeter pressure = 1006.64 mbar
+15:15:13.889 -> Altitude = 180.93 feet
+15:15:13.889 ->  
+15:15:13.889 -> Send '1' to store Warm Start configuration
+15:15:13.889 -> Send '2' to store Accel Cal
+15:15:13.889 -> 53.7,176.29,10.44,-2.61,176.05,-13.09,6.21
+15:15:14.386 -> Accel:-264.50, -38.55, 1342.98 mg
+15:15:14.386 -> Gyro:-1.84, -0.92, 3.98 deg/s
+15:15:14.386 -> Mag:-534,-175,794 mG
+15:15:14.386 -> Software quaternions (ENU):
+15:15:14.386 -> q0 = 0.14 qx = -0.09 qy = -0.01 qz = 0.99
+15:15:14.386 -> Hardware quaternions (NED):
+15:15:14.386 -> Q0 = 0.11 Qx = 0.03 Qy = 0.98 Qz = 0.14
+15:15:14.386 -> Software yaw, pitch, roll: 177.51, 10.51, -2.58
+15:15:14.386 -> Hardware Yaw, Pitch, Roll: 177.14, -12.34, 5.01
+15:15:14.386 -> BMP280:
+15:15:14.386 -> Altimeter temperature = 27.36 C
+15:15:14.386 -> Altimeter temperature = 81.25 F
+15:15:14.386 -> Altimeter pressure = 1006.63 mbar
+15:15:14.386 -> Altitude = 181.20 feet
+15:15:14.386 ->  
+15:15:14.386 -> Send '1' to store Warm Start configuration
+15:15:14.386 -> Send '2' to store Accel Cal
+15:15:14.386 -> 54.2,177.51,10.51,-2.58,177.14,-12.34,5.01
+15:15:14.884 -> Accel:-244.98, -41.48, 1359.57 mg
+15:15:14.884 -> Gyro:1.99, -4.13, 7.80 deg/s
+15:15:14.884 -> Mag:-524,-166,787 mG
+15:15:14.884 -> Software quaternions (ENU):
+15:15:14.884 -> q0 = 0.13 qx = -0.09 qy = -0.01 qz = 0.99
+15:15:14.884 -> Hardware quaternions (NED):
+15:15:14.884 -> Q0 = 0.11 Qx = 0.02 Qy = 0.99 Qz = 0.13
+15:15:14.884 -> Software yaw, pitch, roll: 178.85, 10.21, -2.65
+15:15:14.884 -> Hardware Yaw, Pitch, Roll: 178.49, -12.29, 4.48
+15:15:14.884 -> BMP280:
+15:15:14.884 -> Altimeter temperature = 27.38 C
+15:15:14.884 -> Altimeter temperature = 81.28 F
+15:15:14.884 -> Altimeter pressure = 1006.65 mbar
+15:15:14.884 -> Altitude = 180.65 feet
+15:15:14.884 ->  
+15:15:14.884 -> Send '1' to store Warm Start configuration
+15:15:14.884 -> Send '2' to store Accel Cal
+15:15:14.884 -> 54.7,178.85,10.21,-2.65,178.49,-12.29,4.48
+15:15:15.383 -> Accel:-239.61, -34.65, 1359.57 mg
+15:15:15.383 -> Gyro:-2.30, -1.68, 3.52 deg/s
+15:15:15.383 -> Mag:-534,-156,761 mG
+15:15:15.383 -> Software quaternions (ENU):
+15:15:15.383 -> q0 = 0.13 qx = -0.09 qy = -0.01 qz = 0.99
+15:15:15.383 -> Hardware quaternions (NED):
+15:15:15.383 -> Q0 = 0.10 Qx = 0.02 Qy = 0.99 Qz = 0.13
+15:15:15.383 -> Software yaw, pitch, roll: 178.86, 9.88, -2.28
+15:15:15.383 -> Hardware Yaw, Pitch, Roll: 178.60, -10.93, 4.30
+15:15:15.383 -> BMP280:
+15:15:15.383 -> Altimeter temperature = 27.40 C
+15:15:15.383 -> Altimeter temperature = 81.32 F
+15:15:15.383 -> Altimeter pressure = 1006.64 mbar
+15:15:15.383 -> Altitude = 180.93 feet
+15:15:15.383 ->  
+15:15:15.383 -> Send '1' to store Warm Start configuration
+15:15:15.383 -> Send '2' to store Accel Cal
+15:15:15.383 -> 55.2,178.86,9.88,-2.28,178.60,-10.93,4.30
+15:15:15.881 -> Accel:-255.71, -42.46, 1347.86 mg
+15:15:15.881 -> Gyro:-2.14, 1.22, -0.76 deg/s
+15:15:15.881 -> Mag:-531,-153,757 mG
+15:15:15.881 -> Software quaternions (ENU):
+15:15:15.881 -> q0 = 0.14 qx = -0.09 qy = -0.01 qz = 0.99
+15:15:15.881 -> Hardware quaternions (NED):
+15:15:15.881 -> Q0 = 0.08 Qx = 0.03 Qy = 0.99 Qz = 0.14
+15:15:15.881 -> Software yaw, pitch, roll: 177.74, 10.21, -2.09
+15:15:15.881 -> Hardware Yaw, Pitch, Roll: 177.67, -9.01, 4.31
+15:15:15.881 -> BMP280:
+15:15:15.881 -> Altimeter temperature = 27.41 C
+15:15:15.881 -> Altimeter temperature = 81.34 F
+15:15:15.881 -> Altimeter pressure = 1006.65 mbar
+15:15:15.881 -> Altitude = 180.65 feet
+15:15:15.881 ->  
+15:15:15.881 -> Send '1' to store Warm Start configuration
+15:15:15.881 -> Send '2' to store Accel Cal
+15:15:15.914 -> 55.7,177.74,10.21,-2.09,177.67,-9.01,4.31
+15:15:16.413 -> Accel:-245.46, -20.50, 1358.10 mg
+15:15:16.413 -> Gyro:-2.45, 2.45, -0.31 deg/s
+15:15:16.413 -> Mag:-538,-151,741 mG
+15:15:16.413 -> Software quaternions (ENU):
+15:15:16.413 -> q0 = 0.15 qx = -0.09 qy = 0.00 qz = 0.98
+15:15:16.413 -> Hardware quaternions (NED):
+15:15:16.413 -> Q0 = 0.07 Qx = 0.03 Qy = 0.99 Qz = 0.15
+15:15:16.413 -> Software yaw, pitch, roll: 176.61, 10.54, -1.57
+15:15:16.413 -> Hardware Yaw, Pitch, Roll: 176.56, -7.40, 4.34
+15:15:16.413 -> BMP280:
+15:15:16.413 -> Altimeter temperature = 27.42 C
+15:15:16.413 -> Altimeter temperature = 81.36 F
+15:15:16.413 -> Altimeter pressure = 1006.66 mbar
+15:15:16.413 -> Altitude = 180.38 feet
+15:15:16.413 ->  
+15:15:16.413 -> Send '1' to store Warm Start configuration
+15:15:16.413 -> Send '2' to store Accel Cal
+15:15:16.413 -> 56.2,176.61,10.54,-1.57,176.56,-7.40,4.34
+15:15:16.910 -> Accel:-296.22, -16.59, 1347.86 mg
+15:15:16.910 -> Gyro:8.41, 0.61, -3.52 deg/s
+15:15:16.910 -> Mag:-542,-137,722 mG
+15:15:16.910 -> Software quaternions (ENU):
+15:15:16.910 -> q0 = 0.15 qx = -0.10 qy = 0.01 qz = 0.98
+15:15:16.910 -> Hardware quaternions (NED):
+15:15:16.910 -> Q0 = 0.05 Qx = 0.04 Qy = 0.99 Qz = 0.15
+15:15:16.910 -> Software yaw, pitch, roll: 176.51, 11.29, -0.59
+15:15:16.910 -> Hardware Yaw, Pitch, Roll: 176.63, -5.45, 5.04
+15:15:16.910 -> BMP280:
+15:15:16.910 -> Altimeter temperature = 27.43 C
+15:15:16.910 -> Altimeter temperature = 81.37 F
+15:15:16.910 -> Altimeter pressure = 1006.65 mbar
+15:15:16.910 -> Altitude = 180.65 feet
+15:15:16.910 ->  
+15:15:16.910 -> Send '1' to store Warm Start configuration
+15:15:16.910 -> Send '2' to store Accel Cal
+15:15:16.910 -> 56.7,176.51,11.29,-0.59,176.63,-5.45,5.04
+15:15:17.408 -> Accel:-284.99, -24.40, 1332.73 mg
+15:15:17.408 -> Gyro:1.99, 0.31, -5.66 deg/s
+15:15:17.408 -> Mag:-545,-133,710 mG
+15:15:17.408 -> Software quaternions (ENU):
+15:15:17.408 -> q0 = 0.16 qx = -0.10 qy = 0.01 qz = 0.98
+15:15:17.408 -> Hardware quaternions (NED):
+15:15:17.408 -> Q0 = 0.04 Qx = 0.04 Qy = 0.99 Qz = 0.15
+15:15:17.408 -> Software yaw, pitch, roll: 175.68, 11.25, -0.39
+15:15:17.408 -> Hardware Yaw, Pitch, Roll: 175.84, -4.27, 4.93
+15:15:17.408 -> BMP280:
+15:15:17.408 -> Altimeter temperature = 27.45 C
+15:15:17.408 -> Altimeter temperature = 81.41 F
+15:15:17.408 -> Altimeter pressure = 1006.65 mbar
+15:15:17.408 -> Altitude = 180.65 feet
+15:15:17.408 ->  
+15:15:17.408 -> Send '1' to store Warm Start configuration
+15:15:17.408 -> Send '2' to store Accel Cal
+15:15:17.408 -> 57.2,175.68,11.25,-0.39,175.84,-4.27,4.93
+15:15:17.906 -> Accel:-251.81, -0.49, 1337.61 mg
+15:15:17.906 -> Gyro:-0.15, -0.31, -5.05 deg/s
+15:15:17.906 -> Mag:-545,-133,698 mG
+15:15:17.906 -> Software quaternions (ENU):
+15:15:17.906 -> q0 = 0.17 qx = -0.09 qy = 0.02 qz = 0.98
+15:15:17.906 -> Hardware quaternions (NED):
+15:15:17.906 -> Q0 = 0.04 Qx = 0.04 Qy = 0.98 Qz = 0.17
+15:15:17.906 -> Software yaw, pitch, roll: 174.44, 10.79, 0.31
+15:15:17.906 -> Hardware Yaw, Pitch, Roll: 174.30, -3.63, 4.92
+15:15:17.906 -> BMP280:
+15:15:17.906 -> Altimeter temperature = 27.47 C
+15:15:17.906 -> Altimeter temperature = 81.45 F
+15:15:17.906 -> Altimeter pressure = 1006.65 mbar
+15:15:17.906 -> Altitude = 180.65 feet
+15:15:17.906 ->  
+15:15:17.906 -> Send '1' to store Warm Start configuration
+15:15:17.906 -> Send '2' to store Accel Cal
+15:15:17.906 -> 57.7,174.44,10.79,0.31,174.30,-3.63,4.92
+15:15:18.404 -> Accel:-253.27, 25.38, 1356.64 mg
+15:15:18.404 -> Gyro:-1.07, -6.27, -5.97 deg/s
+15:15:18.404 -> Mag:-542,-130,686 mG
+15:15:18.404 -> Software quaternions (ENU):
+15:15:18.404 -> q0 = 0.18 qx = -0.09 qy = 0.03 qz = 0.98
+15:15:18.404 -> Hardware quaternions (NED):
+15:15:18.404 -> Q0 = 0.03 Qx = 0.04 Qy = 0.98 Qz = 0.18
+15:15:18.404 -> Software yaw, pitch, roll: 172.95, 10.89, 0.99
+15:15:18.404 -> Hardware Yaw, Pitch, Roll: 172.58, -2.54, 5.15
+15:15:18.404 -> BMP280:
+15:15:18.404 -> Altimeter temperature = 27.49 C
+15:15:18.404 -> Altimeter temperature = 81.48 F
+15:15:18.404 -> Altimeter pressure = 1006.67 mbar
+15:15:18.404 -> Altitude = 180.10 feet
+15:15:18.404 ->  
+15:15:18.404 -> Send '1' to store Warm Start configuration
+15:15:18.404 -> Send '2' to store Accel Cal
+15:15:18.404 -> 58.2,172.95,10.89,0.99,172.58,-2.54,5.15
+15:15:18.901 -> Accel:-222.53, 9.76, 1358.59 mg
+15:15:18.901 -> Gyro:0.31, 1.22, -7.34 deg/s
+15:15:18.901 -> Mag:-523,-129,706 mG
+15:15:18.901 -> Software quaternions (ENU):
+15:15:18.901 -> q0 = 0.20 qx = -0.09 qy = 0.02 qz = 0.98
+15:15:18.901 -> Hardware quaternions (NED):
+15:15:18.901 -> Q0 = 0.03 Qx = 0.03 Qy = 0.98 Qz = 0.20
+15:15:18.901 -> Software yaw, pitch, roll: 170.82, 10.14, 0.50
+15:15:18.901 -> Hardware Yaw, Pitch, Roll: 170.16, -2.24, 4.45
+15:15:18.901 -> BMP280:
+15:15:18.901 -> Altimeter temperature = 27.51 C
+15:15:18.901 -> Altimeter temperature = 81.52 F
+15:15:18.901 -> Altimeter pressure = 1006.65 mbar
+15:15:18.901 -> Altitude = 180.65 feet
+15:15:18.901 ->  
+15:15:18.901 -> Send '1' to store Warm Start configuration
+15:15:18.901 -> Send '2' to store Accel Cal
+15:15:18.901 -> 58.7,170.82,10.14,0.50,170.16,-2.24,4.45
+15:15:19.399 -> Accel:-230.82, -1.46, 1342.00 mg
+15:15:19.399 -> Gyro:-0.46, -1.84, -3.98 deg/s
+15:15:19.399 -> Mag:-516,-137,726 mG
+15:15:19.399 -> Software quaternions (ENU):
+15:15:19.399 -> q0 = 0.21 qx = -0.08 qy = 0.02 qz = 0.97
+15:15:19.399 -> Hardware quaternions (NED):
+15:15:19.399 -> Q0 = 0.02 Qx = 0.03 Qy = 0.98 Qz = 0.21
+15:15:19.399 -> Software yaw, pitch, roll: 169.85, 10.01, 0.47
+15:15:19.399 -> Hardware Yaw, Pitch, Roll: 168.89, -1.98, 4.31
+15:15:19.399 -> BMP280:
+15:15:19.399 -> Altimeter temperature = 27.52 C
+15:15:19.399 -> Altimeter temperature = 81.54 F
+15:15:19.399 -> Altimeter pressure = 1006.64 mbar
+15:15:19.399 -> Altitude = 180.93 feet
+15:15:19.399 ->  
+15:15:19.399 -> Send '1' to store Warm Start configuration
+15:15:19.399 -> Send '2' to store Accel Cal
+15:15:19.433 -> 59.2,169.85,10.01,0.47,168.89,-1.98,4.31
+15:15:19.898 -> Accel:-255.22, -2.93, 1347.86 mg
+15:15:19.898 -> Gyro:1.99, 1.53, -5.97 deg/s
+15:15:19.898 -> Mag:-511,-137,745 mG
+15:15:19.898 -> Software quaternions (ENU):
+15:15:19.898 -> q0 = 0.21 qx = -0.09 qy = 0.02 qz = 0.97
+15:15:19.898 -> Hardware quaternions (NED):
+15:15:19.898 -> Q0 = 0.02 Qx = 0.04 Qy = 0.97 Qz = 0.22
+15:15:19.898 -> Software yaw, pitch, roll: 169.01, 10.43, 0.47
+15:15:19.898 -> Hardware Yaw, Pitch, Roll: 168.05, -1.53, 4.71
+15:15:19.898 -> BMP280:
+15:15:19.898 -> Altimeter temperature = 27.52 C
+15:15:19.898 -> Altimeter temperature = 81.54 F
+15:15:19.898 -> Altimeter pressure = 1006.65 mbar
+15:15:19.898 -> Altitude = 180.65 feet
+15:15:19.898 ->  
+15:15:19.898 -> Send '1' to store Warm Start configuration
+15:15:19.898 -> Send '2' to store Accel Cal
+15:15:19.931 -> 59.7,169.01,10.43,0.47,168.05,-1.53,4.71
+15:15:20.429 -> Accel:-251.81, 19.52, 1361.03 mg
+15:15:20.429 -> Gyro:0.00, -0.61, -4.44 deg/s
+15:15:20.429 -> Mag:-509,-133,763 mG
+15:15:20.429 -> Software quaternions (ENU):
+15:15:20.429 -> q0 = 0.22 qx = -0.09 qy = 0.03 qz = 0.97
+15:15:20.429 -> Hardware quaternions (NED):
+15:15:20.429 -> Q0 = 0.02 Qx = 0.05 Qy = 0.97 Qz = 0.23
+15:15:20.429 -> Software yaw, pitch, roll: 167.84, 10.58, 1.18
+15:15:20.429 -> Hardware Yaw, Pitch, Roll: 167.01, -1.17, 5.95
+15:15:20.429 -> BMP280:
+15:15:20.429 -> Altimeter temperature = 27.55 C
+15:15:20.429 -> Altimeter temperature = 81.59 F
+15:15:20.429 -> Altimeter pressure = 1006.65 mbar
+15:15:20.429 -> Altitude = 180.65 feet
+15:15:20.429 ->  
+15:15:20.429 -> Send '1' to store Warm Start configuration
+15:15:20.429 -> Send '2' to store Accel Cal
+15:15:20.429 -> 60.2,167.84,10.58,1.18,167.01,-1.17,5.95
+15:15:20.926 -> Accel:-248.39, 21.96, 1348.83 mg
+15:15:20.926 -> Gyro:-1.07, 0.00, -3.67 deg/s
+15:15:20.926 -> Mag:-506,-140,775 mG
+15:15:20.926 -> Software quaternions (ENU):
+15:15:20.926 -> q0 = 0.23 qx = -0.08 qy = 0.03 qz = 0.97
+15:15:20.926 -> Hardware quaternions (NED):
+15:15:20.926 -> Q0 = 0.03 Qx = 0.05 Qy = 0.97 Qz = 0.23
+15:15:20.926 -> Software yaw, pitch, roll: 167.21, 10.15, 1.32
+15:15:20.926 -> Hardware Yaw, Pitch, Roll: 166.48, -1.92, 6.70
+15:15:20.926 -> BMP280:
+15:15:20.926 -> Altimeter temperature = 27.56 C
+15:15:20.926 -> Altimeter temperature = 81.61 F
+15:15:20.926 -> Altimeter pressure = 1006.65 mbar
+15:15:20.926 -> Altitude = 180.65 feet
+15:15:20.926 ->  
+15:15:20.926 -> Send '1' to store Warm Start configuration
+15:15:20.926 -> Send '2' to store Accel Cal
+15:15:20.926 -> 60.7,167.21,10.15,1.32,166.48,-1.92,6.70
+15:15:21.424 -> Accel:-246.93, 37.58, 1352.74 mg
+15:15:21.424 -> Gyro:-2.45, -0.92, -2.45 deg/s
+15:15:21.424 -> Mag:-506,-144,785 mG
+15:15:21.424 -> Software quaternions (ENU):
+15:15:21.424 -> q0 = 0.23 qx = -0.09 qy = 0.03 qz = 0.97
+15:15:21.424 -> Hardware quaternions (NED):
+15:15:21.424 -> Q0 = 0.03 Qx = 0.06 Qy = 0.97 Qz = 0.23
+15:15:21.424 -> Software yaw, pitch, roll: 167.46, 10.76, 1.49
+15:15:21.424 -> Hardware Yaw, Pitch, Roll: 166.99, -1.88, 7.29
+15:15:21.424 -> BMP280:
+15:15:21.424 -> Altimeter temperature = 27.57 C
+15:15:21.424 -> Altimeter temperature = 81.63 F
+15:15:21.424 -> Altimeter pressure = 1006.65 mbar
+15:15:21.424 -> Altitude = 180.65 feet
+15:15:21.424 ->  
+15:15:21.424 -> Send '1' to store Warm Start configuration
+15:15:21.424 -> Send '2' to store Accel Cal
+15:15:21.424 -> 61.2,167.46,10.76,1.49,166.99,-1.88,7.29
+15:15:21.922 -> Accel:-252.30, 23.91, 1341.02 mg
+15:15:21.922 -> Gyro:0.31, 0.46, -1.84 deg/s
+15:15:21.922 -> Mag:-518,-142,800 mG
+15:15:21.922 -> Software quaternions (ENU):
+15:15:21.922 -> q0 = 0.22 qx = -0.09 qy = 0.03 qz = 0.97
+15:15:21.922 -> Hardware quaternions (NED):
+15:15:21.922 -> Q0 = 0.04 Qx = 0.06 Qy = 0.97 Qz = 0.22
+15:15:21.922 -> Software yaw, pitch, roll: 168.18, 10.75, 1.42
+15:15:21.922 -> Hardware Yaw, Pitch, Roll: 167.87, -2.76, 7.47
+15:15:21.922 -> BMP280:
+15:15:21.922 -> Altimeter temperature = 27.58 C
+15:15:21.922 -> Altimeter temperature = 81.64 F
+15:15:21.922 -> Altimeter pressure = 1006.64 mbar
+15:15:21.922 -> Altitude = 180.93 feet
+15:15:21.922 ->  
+15:15:21.922 -> Send '1' to store Warm Start configuration
+15:15:21.922 -> Send '2' to store Accel Cal
+15:15:21.922 -> 61.7,168.18,10.75,1.42,167.87,-2.76,7.47
+15:15:22.420 -> Accel:-281.58, 34.65, 1355.66 mg
+15:15:22.420 -> Gyro:-2.75, -0.76, -4.13 deg/s
+15:15:22.420 -> Mag:-514,-145,798 mG
+15:15:22.420 -> Software quaternions (ENU):
+15:15:22.420 -> q0 = 0.22 qx = -0.09 qy = 0.03 qz = 0.97
+15:15:22.420 -> Hardware quaternions (NED):
+15:15:22.420 -> Q0 = 0.04 Qx = 0.06 Qy = 0.97 Qz = 0.22
+15:15:22.420 -> Software yaw, pitch, roll: 168.31, 11.24, 1.42
+15:15:22.420 -> Hardware Yaw, Pitch, Roll: 168.19, -2.56, 7.47
+15:15:22.420 -> BMP280:
+15:15:22.420 -> Altimeter temperature = 27.59 C
+15:15:22.420 -> Altimeter temperature = 81.66 F
+15:15:22.420 -> Altimeter pressure = 1006.65 mbar
+15:15:22.420 -> Altitude = 180.65 feet
+15:15:22.420 ->  
+15:15:22.420 -> Send '1' to store Warm Start configuration
+15:15:22.420 -> Send '2' to store Accel Cal
+15:15:22.420 -> 62.2,168.31,11.24,1.42,168.19,-2.56,7.47
+15:15:22.918 -> Accel:-245.46, 32.21, 1344.93 mg
+15:15:22.918 -> Gyro:1.22, -1.53, 0.31 deg/s
+15:15:22.918 -> Mag:-515,-148,810 mG
+15:15:22.918 -> Software quaternions (ENU):
+15:15:22.918 -> q0 = 0.22 qx = -0.09 qy = 0.03 qz = 0.97
+15:15:22.918 -> Hardware quaternions (NED):
+15:15:22.918 -> Q0 = 0.04 Qx = 0.06 Qy = 0.97 Qz = 0.22
+15:15:22.918 -> Software yaw, pitch, roll: 167.99, 10.84, 1.34
+15:15:22.918 -> Hardware Yaw, Pitch, Roll: 167.99, -2.76, 7.56
+15:15:22.918 -> BMP280:
+15:15:22.918 -> Altimeter temperature = 27.60 C
+15:15:22.918 -> Altimeter temperature = 81.68 F
+15:15:22.918 -> Altimeter pressure = 1006.63 mbar
+15:15:22.918 -> Altitude = 181.20 feet
+15:15:22.918 ->  
+15:15:22.918 -> Send '1' to store Warm Start configuration
+15:15:22.918 -> Send '2' to store Accel Cal
+15:15:22.918 -> 62.8,167.99,10.84,1.34,167.99,-2.76,7.56
+15:15:23.415 -> Accel:-250.34, 41.48, 1349.81 mg
+15:15:23.415 -> Gyro:-0.92, -3.67, 0.15 deg/s
+15:15:23.415 -> Mag:-514,-148,812 mG
+15:15:23.415 -> Software quaternions (ENU):
+15:15:23.415 -> q0 = 0.23 qx = -0.09 qy = 0.04 qz = 0.97
+15:15:23.415 -> Hardware quaternions (NED):
+15:15:23.415 -> Q0 = 0.04 Qx = 0.06 Qy = 0.97 Qz = 0.22
+15:15:23.415 -> Software yaw, pitch, roll: 167.64, 10.86, 1.78
+15:15:23.415 -> Hardware Yaw, Pitch, Roll: 167.68, -2.57, 7.86
+15:15:23.415 -> BMP280:
+15:15:23.415 -> Altimeter temperature = 27.61 C
+15:15:23.415 -> Altimeter temperature = 81.70 F
+15:15:23.415 -> Altimeter pressure = 1006.65 mbar
+15:15:23.415 -> Altitude = 180.65 feet
+15:15:23.415 ->  
+15:15:23.415 -> Send '1' to store Warm Start configuration
+15:15:23.415 -> Send '2' to store Accel Cal
+15:15:23.415 -> 63.3,167.64,10.86,1.78,167.68,-2.57,7.86
+15:15:23.913 -> Accel:-259.62, 40.99, 1345.90 mg
+15:15:23.913 -> Gyro:-0.76, -2.14, 0.46 deg/s
+15:15:23.913 -> Mag:-518,-148,822 mG
+15:15:23.913 -> Software quaternions (ENU):
+15:15:23.913 -> q0 = 0.22 qx = -0.09 qy = 0.04 qz = 0.97
+15:15:23.913 -> Hardware quaternions (NED):
+15:15:23.913 -> Q0 = 0.04 Qx = 0.06 Qy = 0.97 Qz = 0.22
+15:15:23.913 -> Software yaw, pitch, roll: 167.95, 10.66, 1.86
+15:15:23.913 -> Hardware Yaw, Pitch, Roll: 168.10, -2.85, 7.92
+15:15:23.913 -> BMP280:
+15:15:23.913 -> Altimeter temperature = 27.61 C
+15:15:23.913 -> Altimeter temperature = 81.70 F
+15:15:23.947 -> Altimeter pressure = 1006.64 mbar
+15:15:23.947 -> Altitude = 180.93 feet
