@@ -46,11 +46,13 @@ Because the sensors are not 5V tolerant, we are using a 3.3 V 8 MHz Pro Mini or 
 #include "MadgwickFilter.h"
 #include <i2c_t3.h>
 #include <SPI.h>
+#include "messages.h"
 
-#define SerialDebug true
-//#define SerialDebug false
+/* #define SerialDebug true */
+#define SerialDebug false
 
 bool passThru = false;
+bool BinaryOutput = true;
 //bool passThru = true;
 
 void setup()
@@ -59,22 +61,6 @@ void setup()
   Serial.begin(115200);
   Serial.clear();
   Wire.begin(I2C_MASTER, 0x00, I2C_PINS_16_17, I2C_PULLUP_EXT, I2C_RATE_400);
-  /* while (Serial.available()) { */
-  /*   Serial.print(Serial.read()); */
-  /*   digitalWrite(13, HIGH); */
-  /*   delay(100); */
-  /*   digitalWrite(13, LOW); */
-  /*   delay(100); */
-  /* } */
-  // Wait till serial input
-  /* while (!recieved) { */
-  /* bool recieved = false; */
-  /*   if (Serial.available()) { */
-  /*     Serial.println(Serial.readString()); */
-  /*     recieved = true; */
-  /*   } */
-  /*   delay(200); */
-  /* } */
 
   // Setup for Master mode, pins 16/17, external pullups, 400kHz for Teensy 3.1
 
@@ -668,7 +654,12 @@ void loop()
       Serial.print(" Qx = "); Serial.print(Quat[1]); 
       Serial.print(" Qy = "); Serial.print(Quat[2]); 
       Serial.print(" Qz = "); Serial.println(Quat[3]); 
-    }               
+    }
+    if (BinaryOutput) {
+      IMU_Message mess { .ax=1000*ax, .ay=1000*ay, .az=1000*az, .gx=gx, .gy=gy, .gz=gz, .qx=q[1], .qy=q[2], .qz=q[3], .qw=q[0] };
+      mess.hash = hash_msg(mess);
+      Serial.write(reinterpret_cast<char *>(&mess), sizeof(IMU_Message));
+    }
     if(passThru)
     {
       rawPress =  readBMP280Pressure();
@@ -741,9 +732,9 @@ void loop()
       /* Serial.println(" feet"); */
       /* Serial.println(" "); */
     }
-    Serial.print(millis()/1000.0, 1);Serial.print(",");
-    Serial.print(yaw); Serial.print(",");Serial.print(pitch); Serial.print(",");Serial.print(roll); Serial.print(",");
-    Serial.print(Yaw); Serial.print(",");Serial.print(Pitch); Serial.print(",");Serial.println(Roll);  
+    /* Serial.print(millis()/1000.0, 1);Serial.print(","); */
+    /* Serial.print(yaw); Serial.print(",");Serial.print(pitch); Serial.print(",");Serial.print(roll); Serial.print(","); */
+    /* Serial.print(Yaw); Serial.print(",");Serial.print(Pitch); Serial.print(",");Serial.println(Roll);   */
     digitalWrite(myLed, !digitalRead(myLed));
     count = millis(); 
     sumCount = 0;
