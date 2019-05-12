@@ -656,9 +656,13 @@ void loop()
       Serial.print(" Qz = "); Serial.println(Quat[3]); 
     }
     if (BinaryOutput) {
-      IMU_Message mess { .ax=1000*ax, .ay=1000*ay, .az=1000*az, .gx=gx, .gy=gy, .gz=gz, .qx=q[1], .qy=q[2], .qz=q[3], .qw=q[0] };
-      mess.hash = hash_msg(mess);
+      IMU_Message mess { .ax=ax, .ay=ay, .az=az,
+                         .gx=gx, .gy=gy, .gz=gz,
+                         .mx=mx, .my=my, .mz=mz,
+                         .qx=q[1], .qy=q[2], .qz=q[3], .qw=q[0] };
+      mess.hash = hash_msg(&mess);
       Serial.write(reinterpret_cast<char *>(&mess), sizeof(IMU_Message));
+      Serial.write("0====D~");
     }
     if(passThru)
     {

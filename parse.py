@@ -1,62 +1,57 @@
 import numpy as np
 import struct
 
+HASH_PRIME = 59359
+
 CONVERSIONS = []
 
 FUSION_READ_FORMAT = [
-        "accel_x", "accel_y", "accel_z", 
-        "gyro_x", "gyro_y", "gyro_z", 
+        "accel_x", "accel_y", "accel_z",
+        "gyro_x", "gyro_y", "gyro_z",
         "mag_x", "mag_y", "mag_z",
         "quat_w", "quat_x", "quat_y", "quat_z",
-        "yaw", "pitch", "roll",
-        "grav_dir_x", "grav_dir_y", "grav_dir_z", 
-        "linear_x", "linear_y", "linear_z",
-        "temp", "pressure", "altitude",
+        #  "yaw", "pitch", "roll",
+        #  "grav_dir_x", "grav_dir_y", "grav_dir_z",
+        #  "linear_x", "linear_y", "linear_z",
+        #  "temp", "pressure", "altitude",
 ]
 
 FUSION_READ_UNITS = [
-        "mg", "mg", "mg",
+        "g", "g", "g",
         "degrees/s", "degrees/s", "degrees/s",
-        "mG", "mG", "mG", 
+        "mG", "mG", "mG",
         "q", "q", "q", "q",
-        "degrees", "degrees", "degrees",
-        "mg", "mg", "mg",
-        "mg", "mg", "mg",
-        "C", "mbar", "feet",
 ]
 
 DEF_OUT_UNITS = [
         "mg", "mg", "mg",
         "degrees/s", "degrees/s", "degrees/s",
-        "mG", "mG", "mG", 
+        "mG", "mG", "mG",
         "q", "q", "q", "q",
-        "degrees", "degrees", "degrees",
-        "mg", "mg", "mg",
-        "mg", "mg", "mg",
-        "C", "mbar", "feet",
 ]
 
 DEF_OUT_FORMAT = [
-        None,
-        None,
-        "linear_x",
-        None,
-        None,
-        "linear_y",
-        None,
-        None,
-        "linear_z",
-        "roll",
-        "gyro_x",
-        "pitch",
-        "gyro_y",
-        "yaw",
-        "gyro_z",
+        "accel_x", "accel_y", "accel_z",
+        "gyro_x", "gyro_y", "gyro_z",
+        "mag_x", "mag_y", "mag_z",
+        "quat_w", "quat_x", "quat_y", "quat_z",
 ]
 
 def parse_raw(dat):
     # We assume that all data has type float
-    return struct.unpack('f'*len(FUSION_READ_FORMAT), dat)
+    # Last int is the hash
+    try:
+        vals = struct.unpack('f'*len(FUSION_READ_FORMAT) + 'I', dat)
+        # check hash
+        bites = struct.unpack('I'*len(FUSION_READ_FORMAT) + 'I', dat)
+        h = (sum(bites[:-1]) % 2**32) % HASH_PRIME
+        if h == bites[-1]:
+            return vals
+        else:
+            print("Failed to read message with contents: {}, hash: {}".format(vals, h))
+            return None
+    except:
+        return None
 
 def convert(dat, read_units, out_units=DEF_OUT_UNITS):
     #TODO if unit conversions are need
